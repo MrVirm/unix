@@ -1,3 +1,3 @@
-![unix](.dor/unix.png)
+![unix](.doc/unix.png)
 
 # My unix flavor
