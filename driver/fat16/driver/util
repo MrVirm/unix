@@ -1,0 +1,15 @@
+#!/bin/bash
+clear
+
+
+function find_word() {
+	for f in $(find ../test -type f -name '*'); do
+		cat $f | grep FILE | grep -v '#'
+		if [[ $? -eq 0 ]]; then
+			echo -e $f '\n'
+		fi
+	done
+}
+
+
+find_word
